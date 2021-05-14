@@ -1,7 +1,7 @@
 <template>
   <header class="min-w-full bg-white shadow-md py-5">
     <div class="title flex justify-between mx-20">
-      <h1>My Blog</h1>
+      <nuxt-link to="/">My Blog</nuxt-link>
 
       <nav>
         <nuxt-link to="/" class="mr-8 inline-block">Home</nuxt-link>

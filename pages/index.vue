@@ -4,11 +4,11 @@
 
     <section class="articles flex justify-center">
       <ul>
-        <li class="article max-w-3xl bg-white shadow-lg mb-5" v-for="article in articles" :key="article">
-          <nuxt-link :to="{name: 'slug',  params: {slug: article.slug}}" class="flex items-center">
-            <img :src="require(`@/assets/resources/${article.img}`)" alt="" class="max-w-xs">
+        <li class="article max-w-3xl bg-white shadow-lg rounded-md p-4 mb-5" v-for="article in articles" :key="article">
+          <nuxt-link :to="{name: 'slug',  params: {slug: article.slug}}" class="flex items-center flex-col lg:flex-row">
+            <img :src="require(`@/assets/resources/${article.img}`)" alt="" class="max-w-xs mb-2 lg:mb-0">
 
-            <div class="detail w-80 flex items-center flex-col">
+            <div class="detail w-auto lg:w-80 flex items-center flex-col">
               <h3>{{article.title}}</h3>
               <p>{{article.description}}</p>
             </div>
